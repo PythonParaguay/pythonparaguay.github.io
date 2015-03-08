@@ -56,7 +56,7 @@
 		clickable: false
 	});
 
-	var image = '../img/marker.png';
+	var image = 'img/marker.png';
 	map.addMarker({
 		lat: -25.3313991,
 		lng: -57.5300254,
