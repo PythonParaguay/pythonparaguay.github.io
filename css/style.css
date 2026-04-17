@@ -305,11 +305,21 @@ hr {
 	width:100%;
 	position:relative;
 	
-	background: url(../img/bg1.jpg) no-repeat top center;
+/*	background: url(../img/bg1.jpg) no-repeat top center;*/
+
+background: rgba(237,245,241,1);
+background: -moz-linear-gradient(left, rgba(237,245,241,1) 0%, rgba(50,108,156,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,245,241,1)), color-stop(100%, rgba(50,108,156,1)));
+background: -webkit-linear-gradient(left, rgba(237,245,241,1) 0%, rgba(50,108,156,1) 100%);
+background: -o-linear-gradient(left, rgba(237,245,241,1) 0%, rgba(50,108,156,1) 100%);
+background: -ms-linear-gradient(left, rgba(237,245,241,1) 0%, rgba(50,108,156,1) 100%);
+background: linear-gradient(to right, rgba(237,245,241,1) 0%, rgba(50,108,156,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf5f1', endColorstr='#326c9c', GradientType=1 );
+
 }
 
 #intro.intro {
-	padding:20% 0 0 0;
+	padding:13% 0 0 0;
 }
 
 .intro .slogan {
@@ -347,8 +357,10 @@ hr {
 
 .intro .slogan h4 {
 	color: #fff;
-	/*text-shadow: -1px 1px 1px #000;*/
+	/*text-shadow: -1px 1px 1px #000;background: url(../img/bg1.jpg) no-repeat fixed center;*/
 }
+
+.intro .logo{ float: right; margin-right:10%;}
 
 
 /* ===========================
@@ -814,5 +826,15 @@ Parallax
 		border-radius: 50%;
 		font-size: 20px;
 	}
+
+	#senatics img{ max-width: 300px;}
+
+	#intro img{ max-width: 300px; margin: 20px auto;}
+
+	#intro .logo{float:none; margin-left: 20%;}
+
+	#intro .logo img{ max-width: 200px; margin: 80px 0px 20px 0px; padding:0px;}
+
+	.boxed-grey{min-height: 300px;}
 	
 }
